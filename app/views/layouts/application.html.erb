@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>VishuApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>VishuApp</title>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  </head>
 
-</body>
+  <body class="<%= controller_name %> <%= action_name %>">
+    <div class="container">
+       <div class="header clearfix">
+         <!-- <nav>
+           <ul class="nav nav-pills pull-right">
+           </ul> -->
+         <!-- </nav> -->
+         <h3 class="text-muted"><a href='/'>VishuApp</a></h3>
+       </div>
+       <div class="row">
+         <div class="col-md-12">
+           <%= flash_messages %>
+           <%= yield %>
+         </div>
+       </div>
+
+       <footer class="footer">
+         <p>&copy; 2016 Company, Inc.</p>
+       </footer>
+
+     </div> <!-- /container -->
+  </body>
 </html>
