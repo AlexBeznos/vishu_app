@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Request number: <b><%= @request.request_number %></b></div>
+  <div class="panel-body">
+  </div>
+  <table class="table">
+    <tr>
+      <td><b>Request Type:</b></td>
+      <td><%= @request.request_type %></td>
+    </tr>
+    <tr>
+      <td><b>Request Action:</b></td>
+      <td><%= @request.request_action %></td>
+    </tr>
+    <tr>
+      <td><b>Request Sequence number:</b></td>
+      <td><%= @request.sequence_number %></td>
+    </tr>
+    <tr>
+      <td><b>Request service area:</b></td>
+      <td><code><%= @request.service_area %></code></td>
+    </tr>
+    <tr>
+      <td><b>Request excavator:</b></td>
+      <td><code><%= @request.excavator %></code></td>
+    </tr>
+    <tr>
+      <td><b>Request well known text:</b></td>
+      <td><%= @request.well_known_text %></td>
+    </tr>
+  </table>
+</div>
