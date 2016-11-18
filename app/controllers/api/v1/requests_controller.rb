@@ -20,7 +20,7 @@ class Api::V1::RequestsController < Api::ApplicationController
       service_area: {
         primary_service_area_code: [:sa_code],
         additional_service_area_codes: {sa_code: []}
-      },
+      }
     )
   end
 end
